@@ -37,7 +37,7 @@ canbus_uuid: 8cead73a7424
 [include TEST_SPEED.cfg ]
 [include caselight.cfg]
 [include led_effects.cfg]
-[include nozzle_scrug.cfg]
+[include nozzle_scrub.cfg]
 [include config_backup.cfg]
 [include macros.cfg]
 [include bedfans.cfg]
