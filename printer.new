@@ -242,7 +242,6 @@ pressure_advance_smooth_time: 0.040
 uart_pin: EBBCan: PA15
 run_current: 0.650
 stealthchop_threshold: 999999
-
 uart_pin: can0:EXT_UART
 interpolate: false
 run_current: 0.6
@@ -418,8 +417,6 @@ initial_BLUE: 0.08
 
 [idle_timeout]
 
-timeout: 5200
-=======
 timeout: 1200
 
 gcode:
@@ -476,9 +473,6 @@ aliases:
 [temperature_sensor Chamber]
 sensor_type: Generic 3950
 sensor_pin: PF5
-# [temperature_sensor chamber]
-# sensor_type: Generic 3950
-# sensor_pin: PF5
 min_temp: 0
 max_temp: 100
 # gcode_id: C
@@ -575,7 +569,7 @@ gcode:
     M117 Heating hotend
     CLEAN_NOZZLE                                                                                        ; clean nozzle while ho
     STATUS_PRINTING
-    VORON_PURGE
+    #VORON_PURGE
     # G92 E0                                                                                            ; reset Extruder
     # G1 X0 Y20 Z0.3 F19500.0                                                                           ; move to start position
     # G1 X0 Y200.0 Z0.3 F1500.0 E15                                                                     ; draw the first line
